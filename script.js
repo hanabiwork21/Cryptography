@@ -38,10 +38,10 @@ function encrypt() {
 // Decrypt Function (XOR → Caesar) with Secret Words Check
 function decrypt() {
     // Ask for 7 secret words
-    let userSecretWords = prompt("Enter the 7 secret words (separate by spaces):");
+    let userSecretWords = prompt("Enter the secret code:");
 
     // Predefined secret words (Change these as needed)
-    let correctSecretWords = "apple banana cherry dragon elephant fox grape";
+    let correctSecretWords = "apple banana";
 
     // Validate input
     if (!userSecretWords || userSecretWords.trim() !== correctSecretWords) {
