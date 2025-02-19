@@ -1,1 +1,73 @@
-(function(_0x4af22d,_0x276692){const _0x569123=_0x3978,_0x21db3e=_0x4af22d();while(!![]){try{const _0x4cd7ee=-parseInt(_0x569123(0x1be))/0x1*(parseInt(_0x569123(0x1ca))/0x2)+-parseInt(_0x569123(0x1b2))/0x3*(-parseInt(_0x569123(0x1c1))/0x4)+-parseInt(_0x569123(0x1c8))/0x5*(-parseInt(_0x569123(0x1c4))/0x6)+parseInt(_0x569123(0x1bc))/0x7*(-parseInt(_0x569123(0x1c5))/0x8)+parseInt(_0x569123(0x1ce))/0x9*(-parseInt(_0x569123(0x1b1))/0xa)+-parseInt(_0x569123(0x1d0))/0xb*(parseInt(_0x569123(0x1c9))/0xc)+parseInt(_0x569123(0x1b3))/0xd*(parseInt(_0x569123(0x1c0))/0xe);if(_0x4cd7ee===_0x276692)break;else _0x21db3e['push'](_0x21db3e['shift']());}catch(_0x32a0b0){_0x21db3e['push'](_0x21db3e['shift']());}}}(_0x4432,0x75615));function _0x4432(){const _0x318869=['shiftKey','charCodeAt','match','inputText','7469RcQKWl','Incorrect\x20secret\x20words!\x20Decryption\x20aborted.','1nGIdBC','getElementById','56EXVixe','3721588SWKdtb','fromCharCode','Please\x20enter\x20an\x20XOR\x20key.','174IKgZSG','3424RPugup','value','trim','43510EndNdM','2292BVMKHG','1121602rrUsdt','join','split','Decryption\x20successful!','184671lwJDmX','length','20108GyRfob','outputText','430HnzyTF','3JzxjBE','5027672ZVTIGq','xorKey','map','Invalid\x20encrypted\x20text!\x20Please\x20ensure\x20you\x20have\x20the\x20correct\x20input.','Enter\x20the\x20secret\x20words:'];_0x4432=function(){return _0x318869;};return _0x4432();}function caesarCipher(_0xb14196,_0x159ea3){const _0xed6c6c=_0x3978;return _0xb14196[_0xed6c6c(0x1cc)]('')[_0xed6c6c(0x1b5)](_0x3c3c28=>{const _0x46670e=_0xed6c6c;let _0x4f10c2=_0x3c3c28[_0x46670e(0x1b9)](0x0);if(_0x3c3c28[_0x46670e(0x1ba)](/[a-z]/i)){let _0x457950=_0x3c3c28>='a'?0x61:0x41;return String[_0x46670e(0x1c2)](((_0x4f10c2-_0x457950+_0x159ea3)%0x1a+0x1a)%0x1a+_0x457950);}return _0x3c3c28;})[_0xed6c6c(0x1cb)]('');}function _0x3978(_0x1eff47,_0x175226){const _0x4432da=_0x4432();return _0x3978=function(_0x39787e,_0x349b31){_0x39787e=_0x39787e-0x1b1;let _0x1f2d22=_0x4432da[_0x39787e];return _0x1f2d22;},_0x3978(_0x1eff47,_0x175226);}function xorCipher(_0x55b83e,_0x10c1d2){const _0x181114=_0x3978;let _0x841ae9=0x0;return _0x55b83e[_0x181114(0x1cc)]('')[_0x181114(0x1b5)](_0x3a6f84=>{const _0x109fc5=_0x181114;let _0x4b9dba=_0x3a6f84[_0x109fc5(0x1b9)](0x0)^_0x10c1d2[_0x109fc5(0x1b9)](_0x841ae9%_0x10c1d2[_0x109fc5(0x1cf)]);return _0x841ae9++,String[_0x109fc5(0x1c2)](_0x4b9dba);})[_0x181114(0x1cb)]('');}function encrypt(){const _0x567f1f=_0x3978;let _0x5c9111=document['getElementById'](_0x567f1f(0x1bb))['value'],_0x31a218=parseInt(document[_0x567f1f(0x1bf)](_0x567f1f(0x1b8))[_0x567f1f(0x1c6)]),_0x38ae60=document['getElementById'](_0x567f1f(0x1b4))[_0x567f1f(0x1c6)];if(!_0x38ae60){alert(_0x567f1f(0x1c3));return;}let _0x332d1c=caesarCipher(_0x5c9111,_0x31a218),_0x4245bc=xorCipher(_0x332d1c,_0x38ae60);document[_0x567f1f(0x1bf)](_0x567f1f(0x1d1))[_0x567f1f(0x1c6)]=btoa(_0x4245bc);}function decrypt(){const _0x29f936=_0x3978;let _0x90eb56=prompt(_0x29f936(0x1b7)),_0x3cfbed='apple\x20banana\x20cherry\x20dragon\x20elephant\x20fox\x20grape';if(!_0x90eb56||_0x90eb56[_0x29f936(0x1c7)]()!==_0x3cfbed){alert(_0x29f936(0x1bd));return;}let _0xa4234f=document['getElementById'](_0x29f936(0x1d1))[_0x29f936(0x1c6)];try{let _0xc49355=atob(_0xa4234f),_0x5e382f=parseInt(document[_0x29f936(0x1bf)](_0x29f936(0x1b8))[_0x29f936(0x1c6)]),_0xaa44ee=document[_0x29f936(0x1bf)]('xorKey')[_0x29f936(0x1c6)];if(!_0xaa44ee){alert(_0x29f936(0x1c3));return;}let _0x286aa7=xorCipher(_0xc49355,_0xaa44ee),_0x1d1ef0=caesarCipher(_0x286aa7,-_0x5e382f);document['getElementById']('outputText')[_0x29f936(0x1c6)]=_0x1d1ef0,alert(_0x29f936(0x1cd));}catch(_0x44cf1a){alert(_0x29f936(0x1b6));}}
+function caesarCipher(str, shift) {
+    return str.split('').map(char => {
+        let code = char.charCodeAt(0);
+        if (char.match(/[a-z]/i)) {
+            let shiftBase = char >= 'a' ? 97 : 65;
+            return String.fromCharCode(((code - shiftBase + shift) % 26 + 26) % 26 + shiftBase);
+        }
+        return char; // Return unchanged for non-letters
+    }).join('');
+}
+
+function xorCipher(str, key) {
+    let keyIndex = 0;
+    return str.split('').map(char => {
+        let xorCode = char.charCodeAt(0) ^ key.charCodeAt(keyIndex % key.length);
+        keyIndex++;
+        return String.fromCharCode(xorCode);
+    }).join('');
+}
+
+// Encrypt Function (Caesar → XOR)
+function encrypt() {
+    let text = document.getElementById("inputText").value;
+    let shift = parseInt(document.getElementById("shiftKey").value);
+    let xorKey = document.getElementById("xorKey").value;
+
+    if (!xorKey) {
+        alert("Please enter an XOR key.");
+        return;
+    }
+
+    let caesarEncrypted = caesarCipher(text, shift);
+    let finalEncrypted = xorCipher(caesarEncrypted, xorKey);
+
+    document.getElementById("outputText").value = btoa(finalEncrypted); // Base64 for safe display
+}
+
+// Decrypt Function (XOR → Caesar) with Secret Words Check
+function decrypt() {
+    // Ask for 7 secret words
+    let userSecretWords = prompt("Enter the 7 secret words (separate by spaces):");
+
+    // Predefined secret words (Change these as needed)
+    let correctSecretWords = "apple banana cherry dragon elephant fox grape";
+
+    // Validate input
+    if (!userSecretWords || userSecretWords.trim() !== correctSecretWords) {
+        alert("Incorrect secret words! Decryption aborted.");
+        return;
+    }
+
+    let encryptedText = document.getElementById("outputText").value;
+
+    try {
+        let decodedText = atob(encryptedText); // Decode Base64
+        let shift = parseInt(document.getElementById("shiftKey").value);
+        let xorKey = document.getElementById("xorKey").value;
+
+        if (!xorKey) {
+            alert("Please enter an XOR key.");
+            return;
+        }
+
+        let xorDecrypted = xorCipher(decodedText, xorKey);
+        let finalDecrypted = caesarCipher(xorDecrypted, -shift); // Reverse shift for decryption
+
+        // ✅ Display the decrypted message correctly
+        document.getElementById("outputText").value = finalDecrypted;
+        alert("Decryption successful!");
+    } catch (error) {
+        alert("Invalid encrypted text! Please ensure you have the correct input.");
+    }
+}
